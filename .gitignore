@@ -1,0 +1,26 @@
+# System
+.DS_Store
+Thumbs.db
+
+# Node / npm
+node_modules/
+package-lock.json
+yarn.lock
+
+# VSCode
+.vscode/
+
+# Logi
+*.log
+
+# Build / dist
+dist/
+build/
+
+# Temp files
+*.tmp
+*.swp
+
+# Mac / Linux hidden files
+*.DS_Store
+*.bak
