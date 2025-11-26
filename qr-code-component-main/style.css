@@ -22,7 +22,7 @@ body {
   
   .img {
     height: 20vh;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     max-width: 300px;
   }
@@ -38,30 +38,39 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 250px;
+    width: 20vh;
     text-align: center;
     color: hsl(218, 44%, 22%);
-    gap: 1vh;
     margin: auto;
   }
 
-  .heading {
+  .heading,
+  .text {
     font-weight: 700;
     font-size: 15px;
-    width: 175px;
-    margin: auto;
+    width: 20vh;
+    display: flex;
+    flex-wrap: wrap;
   }
+  
 
-  .top p,
-  .heading p {
-    margin: 0 auto;
+  .text p,
+  .heading h1 {
     width: 20vh;
   }
 
   .text {
     font-weight: 400;
     font-size: 10px;
-    margin: auto;
+    margin: 0 auto;
+    width: 20vh;
+    color: hsl(216, 15%, 48%);
+  }
+
+  .text p{
+    font-weight: 400;
+    font-size: 10px;
+    margin: 0 auto;
     width: 175px;
     color: hsl(216, 15%, 48%);
   }
@@ -73,7 +82,7 @@ body {
 
   @media (min-width: 400px) {
     .top p,
-    .heading p {
+    text p {
     margin: 0 auto;
     width: auto;
   }
