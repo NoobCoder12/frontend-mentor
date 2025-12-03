@@ -14,7 +14,7 @@ body {
     align-items: end;
     justify-content: center;
     width: 12vw;
-    min-width: 230px;
+    min-width: 14.4rem;
     margin: 30vh auto;
     flex-wrap: wrap;
     background-color: var(--light-white);
