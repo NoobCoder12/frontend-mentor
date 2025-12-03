@@ -2,6 +2,7 @@
   --light-blue: hsl(212, 45%, 89%);
   --light-white: hsl(0, 0%, 100%);
   --grey-blue: hsl(216, 15%, 48%);
+  --shadow-default: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -19,7 +20,7 @@ body {
     flex-wrap: wrap;
     background-color: var(--light-white);
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-default);
     padding-block-end: 1rem;
   }
 
