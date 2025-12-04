@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    height: 100vh;
 }
 
 .card {
@@ -32,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     height: clamp(15rem, 25vh, 16rem);
+    padding-block-end: 5px;
 }
 
 .div-img img{
@@ -46,14 +48,59 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 5%;
-    padding: 0 15px;
+    padding: 0 clamp(1rem, 3%, 2rem) 0 clamp(1rem, 3%, 2rem);
     background-color: var(--yellow-background);
     width: 15%;
     height: 6%;
     border-radius: 5px;
+    margin-block-end: 4%;
 }
 
 .learning p {
     font-weight: 800;
     font-size: 1rem;
+}
+
+.more p,
+.more h1,
+.more span {
+    margin-left: 5%;
+}
+
+.more span {
+    font-size: 0.8rem;
+}
+
+.more {
+    width: 90%;
+    margin-block-end: 0.3rem;
+}
+
+.more h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.more p {
+    color: var(--light-gray);
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-left: 5%;
+    gap: 1rem;
+}
+
+.author img {
+    width: 10%;
+    height: 75%;
+}
+
+.author p {
+    font-weight: 800;
 }
