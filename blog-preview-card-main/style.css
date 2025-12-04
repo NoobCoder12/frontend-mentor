@@ -3,6 +3,7 @@
     --white: hsl(0, 0%, 100%);
     --light-gray: hsl(0, 0%, 42%);
     --dark-gray: hsl(0, 0%, 7%);
+    --margin-left: clamp(1rem, 1.2vw, 1.5rem);
 }
 
 body {
@@ -13,7 +14,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    height: 100vh;
 }
 
 .card {
@@ -21,11 +21,13 @@ body {
     flex-direction: column;
     background-color: var(--white);
     width: clamp(18rem, 90%, 25rem);
-    height: clamp(32rem, 60vh, 38rem);
+    height: clamp(32rem, 50vh, 38rem);
     border-radius: 20px;
     box-shadow: black 10px 10px;
     border: 1px solid black;
     margin: auto;
+    margin-block-end: 10%;
+    padding: 0.4rem;
 }
 
 .div-img {
@@ -47,7 +49,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5%;
+    margin-left: var(--margin-left);
     padding: 0 clamp(1rem, 3%, 2rem) 0 clamp(1rem, 3%, 2rem);
     background-color: var(--yellow-background);
     width: 15%;
@@ -61,19 +63,14 @@ body {
     font-size: 1rem;
 }
 
-.more p,
-.more h1,
-.more span {
-    margin-left: 5%;
-}
-
 .more span {
     font-size: 0.8rem;
 }
 
 .more {
     width: 90%;
-    margin-block-end: 0.3rem;
+    margin-left: var(--margin-left);
+    
 }
 
 .more h1 {
@@ -92,15 +89,27 @@ body {
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin-left: 5%;
-    gap: 1rem;
+    gap: 0.8rem;
+    height: 7vh;
+    margin-block-end: 0.5rem;
+    margin-left: var(--margin-left);
 }
 
 .author img {
-    width: 10%;
-    height: 75%;
+    width: 2rem;
+    height: 2rem;
 }
 
 .author p {
     font-weight: 800;
+}
+
+@media (max-width: 43rem) {
+    .more h1 {
+        font-size: 1.4rem;
+    }
+    
+    .more p {
+        font-size: 0.9rem;
+    }
 }
