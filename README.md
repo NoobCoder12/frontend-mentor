@@ -6,7 +6,10 @@ This repository contains my solutions for various Frontend Mentor challenges. Ea
 
 | Project | Live Preview |
 |---------|-------------|
-| QR Code Component | [View Live](https://qr-code.jakubszrajber12.workers.dev) |
+| QR Code Component | [View Live](https://frontend-mentor-xcj8.onrender.com) |
+| Blog preview card | [View Live](https://frontend-mentor-blog.onrender.com) |
+| Social links profile | [View Live](https://frontend-mentor-socials-links-profile.onrender.com) |
+
 
 ## About
 
