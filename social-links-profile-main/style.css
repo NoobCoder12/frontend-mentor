@@ -103,6 +103,11 @@ ul li {
     font-weight: 700;
 }
 
+a {
+    text-decoration: none;
+    color: var(--white)
+}
+
 ul li:hover {
     background-color: var(--green);
     color: black;
